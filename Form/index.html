@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="compras-form">
+        <fieldset class="form-container">
+            <legend>Compras</legend>
+            <section class="main-section">
+                <section class="column produtos">
+                    <h2 class="section-title">Produtos</h2>
+
+                    <div class="select-container">
+                        <select class="select-box">
+                            <option selected>Aquário</option>
+                            <option>Aquário 43L</option>
+                            <option>Aquário 84L</option>
+                        </select>
+                        <button type="button" class="add-button">+</button>
+                    </div>
+
+                    <fieldset class="complementos">
+                        <legend>Complementos</legend>
+                        <label class="radio-option">
+                            <input type="radio" name="complemento"> Móvel + Luminária
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="complemento"> Luminária
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="complemento" checked> Só vidro
+                        </label>
+                    </fieldset>
+
+                    <div class="spacer"></div>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox"> Entrega como Presente
+                    </label>
+                </section>
+
+                <section class="column lista">
+                    <h2 class="section-title">Lista de Compras</h2>
+                    <textarea class="lista-box"></textarea>
+                </section>
+            </section>
+
+            <section class="total-section">
+                <label for="valorTotal">Valor Total:</label>
+                <input type="text" id="valorTotal">
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>
